@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "productsapi",
+    "pluralName": "products",
+    "displayName": "product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "price": {
+      "type": "biginteger"
+    },
+    "oldprice": {
+      "type": "biginteger"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "quads",
+        "ships",
+        "hydro",
+        "boats",
+        "rovers",
+        "snowrovers",
+        "engines",
+        "parts"
+      ]
+    },
+    "sale": {
+      "type": "boolean",
+      "default": false
+    },
+    "places": {
+      "type": "biginteger"
+    },
+    "power": {
+      "type": "biginteger"
+    },
+    "rating": {
+      "type": "biginteger"
+    },
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "engineType": {
+      "type": "enumeration",
+      "enum": [
+        "petrol",
+        "disel",
+        "electro"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "year": {
+      "type": "string"
+    },
+    "uid": {
+      "type": "customField",
+      "customField": "plugin::field-uuid.uuid"
+    }
+  }
+}

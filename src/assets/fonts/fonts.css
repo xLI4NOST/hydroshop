@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('SFPRODISPLAYBOLD.OTF');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 500;
+    src: url('SFPRODISPLAYTHINITALIC.OTF');
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    src: url('SFPRODISPLAYMEDIUM.OTF');
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url("ProximaNova-Regular.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('Barlow-BoldItalic.woff');
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+}
+
