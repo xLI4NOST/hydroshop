@@ -1,25 +1,26 @@
 import classes from './CommodityBlock.module.sass'
 import RecomendCard from "../RecomendProduct/RecomendCard/RecomendCard";
-import {Link} from "react-router-dom";
-import axios from "axios";
+import {Link, useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
+import {useDispatch, useSelector} from "react-redux";
+import {fetchProductsData, productsData} from "../../redux/productsReducer";
 
 const CommodityBlock = () => {
 
-    const [card, setCard]= useState(null)
-const selectCard =(item)=>{
+    const [card, setCard] = useState(null)
+    const selectCard = (item) => {
         setCard(item)
-}
-    useEffect(() => {
-        axios.get('http://localhost:1337/api/products?populate=*')
-            .then(res => setShops(res.data.data))
-    }, [])
+    }
 
-    const [shops, setShops] = useState([])
 
+    const products = useSelector((state) => state.products.products)
+    const pageInfo = useSelector(state => state.products.products.meta)
+    console.log(pageInfo)
+
+    
     return (
         <div onClick={selectCard} className={classes.CommodityBlock}>
-            {shops.map(res =>
+            {products.data && products.data.map(res =>
                 <Link to={`/product/${res.attributes.uid}`} key={res.attributes.uid} className={classes.link}>
                     <RecomendCard
                         key={res.attributes.uid}

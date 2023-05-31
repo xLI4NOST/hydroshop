@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 import {Route, Routes} from "react-router-dom";
 import SalePage from "./pages/SalePage/SalePage";
 import BuyPage from "./components/BuyPage/BuyPage";
+import {Provider} from "react-redux";
 
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
                 <Header/>
                      <Routes>
                          <Route path='/' element={<MainPage/>}/>
-                         <Route path='hydrocicls' element={<SalePage namePage={"Гидроциклы"}/>}/>
+                         <Route path='/salePage/:category' element={<SalePage/>}/>
                          <Route path='product/:id' element={<BuyPage/>}/>
                      </Routes>
             </Wrapper>

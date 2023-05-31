@@ -17,7 +17,7 @@ const RecomendCard = ({text, hideButton, image, price}) => {
         <h2 className={classes.watchButton}>посмотреть товар</h2>
         <img className={classes.likeButton} src={hurt}/>
         <img className={classes.mainPicture} src={`http://localhost:1337${image}` }/>
-        <h2 className={classes.title}>{text || 'Водонепроницаемый\n' + 'Рюкзак'}</h2>
+        <h2 className={classes.title}>{text}</h2>
             <p>{price || 9800} </p>
         <button className={classes.buyButton}><img src={whiteStroller}/></button>
     </div>

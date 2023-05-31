@@ -1,5 +1,5 @@
 import classes from './RecomendProduct.module.sass'
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Navigation} from "swiper";
 import gmg from "../../images/png/CFMOTO-X6-EPS_blue 1.png"
@@ -7,15 +7,19 @@ import ddd from "../../images/png/motor.png"
 import eee from "../../images/png/rukzak.png"
 import ww from "../../images/png/banner.png"
 import RecomendCard from "./RecomendCard/RecomendCard";
+import {fetchRecomendProductsData} from "../../redux/recomendproductsReduccer";
+import {useDispatch, useSelector} from "react-redux";
 
 const RecomendProduct = ({text, defaultView, hideButton}) => {
 const [button, setButton] = useState(defaultView)
-const baneers =[
-    gmg,
-    ddd,
-    eee,
-    ww
-]
+    const dispatch = useDispatch()
+    const drop = "local"
+useEffect(()=>{
+    dispatch(fetchRecomendProductsData(drop))
+}, [])
+    const recomendProducts = useSelector((state)=>state.recomendProducts.recomendProducts)
+
+
     const handleClickButton =(name)=>{
         switch (name){
             case 'Запчасти': setButton(name)
@@ -59,9 +63,9 @@ const baneers =[
             }}
 
         >
-            <SwiperSlide><RecomendCard/></SwiperSlide>
-            {baneers.map((banner, index)=>
-                <SwiperSlide key={index}><RecomendCard src={banner}/></SwiperSlide>
+
+            {recomendProducts.map((item)=>
+                <SwiperSlide  key={item.attributes.uid}><RecomendCard text={item.attributes.name} image={item.attributes.image.data.attributes.url}/></SwiperSlide>
             )}
 
         </Swiper>

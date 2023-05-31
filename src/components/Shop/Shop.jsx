@@ -3,7 +3,6 @@ import {objectValue} from "../../assets/test/Tests";
 import BlueButton from "../UI/BlueButton/BlueButton";
 
 const Shop = ({name, workTime, res}) => {
-console.log(res)
     return (
         <div className={classes.shop}>
             <h2>{name}</h2>

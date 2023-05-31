@@ -9,13 +9,15 @@ import {useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
 import axios from "axios";
 import ShopsBlock from "../ShopsBlock/ShopsBlock";
+import {useDispatch, useSelector} from "react-redux";
+import {productsData} from "../../redux/productsReducer";
 
 const BuyPage = () => {
-    
     const [product, setProduct] = useState({})
     const [image, setImage] = useState()
     const [markets, setMarkets] = useState([])
     const params = useParams()
+
     useEffect(() => {
         axios.get(`http://localhost:1337/api/products?filters[uid]=${params.id}&populate=*`)
             .then(res => {
@@ -31,7 +33,6 @@ const BuyPage = () => {
     }, [params])
 
     console.log(markets)
-
 
     return (
         <div className={classes.buyPage}>
