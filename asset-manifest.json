@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b0a152eb.css",
+    "main.js": "/static/js/main.d99823d4.js",
+    "static/js/787.555671cc.chunk.js": "/static/js/787.555671cc.chunk.js",
+    "static/media/banner.png": "/static/media/banner.e9e81313729688f23f77.png",
+    "static/media/SFPRODISPLAYMEDIUM.OTF": "/static/media/SFPRODISPLAYMEDIUM.b85d841dacb040b84951.OTF",
+    "static/media/SFPRODISPLAYBOLD.OTF": "/static/media/SFPRODISPLAYBOLD.b1f4d2c69fa808ebca12.OTF",
+    "static/media/SFPRODISPLAYTHINITALIC.OTF": "/static/media/SFPRODISPLAYTHINITALIC.3d2597acea660678af19.OTF",
+    "static/media/Barlow-BoldItalic.woff": "/static/media/Barlow-BoldItalic.ae4d797975b29accdc2a.woff",
+    "static/media/ProximaNova-Regular.woff": "/static/media/ProximaNova-Regular.99528640efded3e12591.woff",
+    "static/media/rukzak.png": "/static/media/rukzak.b94416b9ff85d62eafad.png",
+    "static/media/2018-Maverick-X3-X-rc-TURBO-R-Carbon-Black-and-Octane-Blue_3-4-front4072 2.png": "/static/media/2018-Maverick-X3-X-rc-TURBO-R-Carbon-Black-and-Octane-Blue_3-4-front4072 2.54fbe573a0e51eed9097.png",
+    "static/media/CFMOTO-X6-EPS_blue 1.png": "/static/media/CFMOTO-X6-EPS_blue 1.695b430eed63ac1c8405.png",
+    "static/media/motor.png": "/static/media/motor.5c4e90f14de39a096348.png",
+    "static/media/facebook.svg": "/static/media/facebook.cd8c3214f787370a9310ff21f4d17471.svg",
+    "static/media/point.svg": "/static/media/point.7dcc7c4986a38f9f7431cf91980c38d9.svg",
+    "static/media/instagram- .svg": "/static/media/instagram- .ebfc084a64999d85fb27b29c7f8dd292.svg",
+    "static/media/vk .svg": "/static/media/vk .317f96b2fe9207d3ead643e84d066933.svg",
+    "static/media/youtube .svg": "/static/media/youtube .3d540ac7035bc09597294d8a84bd5d01.svg",
+    "index.html": "/index.html",
+    "static/media/stroller.svg": "/static/media/stroller.030ec2698842ed365a8c3aeec3cec89d.svg",
+    "static/media/whiteStroller.svg": "/static/media/whiteStroller.3e90ce4f01565254acbf1c2f770eba95.svg",
+    "static/media/Hurt.svg": "/static/media/Hurt.75355df46857fd0012a7553164919e57.svg",
+    "static/media/People.svg": "/static/media/People.95b79df76425f176ab324f413d400655.svg",
+    "static/media/Group.svg": "/static/media/Group.aa4bbe14269304fca9b81283d3f82584.svg",
+    "static/media/Star.svg": "/static/media/Star.f4d1c42ff465d11c0769473394d3e671.svg",
+    "static/media/line.svg": "/static/media/line.e61b01bc498c2d643f53a34a1351b9bc.svg",
+    "main.b0a152eb.css.map": "/static/css/main.b0a152eb.css.map",
+    "main.d99823d4.js.map": "/static/js/main.d99823d4.js.map",
+    "787.555671cc.chunk.js.map": "/static/js/787.555671cc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b0a152eb.css",
+    "static/js/main.d99823d4.js"
+  ]
+}
